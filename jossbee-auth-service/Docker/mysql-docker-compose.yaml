@@ -1,0 +1,38 @@
+version: '3.7'
+
+services:
+  discovery-server:
+    image: 124225/josbee-discovery-server:josbee-discovery-service
+    container_name: DiscoveryServer
+    networks:
+      - auth_network
+    ports:
+      - "8761:8761"
+  auth-server:
+    image: 124225/jossbee-auth-server:jossbee-auth-server
+    container_name: AuthServer
+    networks:
+      - auth_network
+    ports:
+      - "9191:9191"
+  auth-db:
+    image: mysql:latest
+    container_name: AuthDB
+    networks:
+      - auth_network
+    environment:
+      MYSQL_ROOT_PASSWORD: jossbee1234
+      MYSQL_DATABASE: authdb
+      MYSQL_USER: jossbeeAuth
+      MYSQL_PASSWORD: jossbee1234
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+networks:
+  auth_network:
+    driver: bridge
+
+volumes:
+  mysql_data:

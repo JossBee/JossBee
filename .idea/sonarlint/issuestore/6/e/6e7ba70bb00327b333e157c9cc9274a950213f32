@@ -1,0 +1,6 @@
+
+X
+java:S3655";Call "optionalUser.isPresent()" before accessing the value.(†î›„8‡é‹øœ1
+L
+java:S2201"/The return value of "orElseThrow" must be used.(œš¯ñ8é‹øœ1
+]	java:S125""<This block of commented-out lines of code should be removed.(»•ûÿÿÿÿ8é‹øœ1

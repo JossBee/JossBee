@@ -1,0 +1,40 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: authdb-statefulset
+spec:
+  replicas: 1
+  serviceName: authdb-services
+  selector:
+    matchLabels:
+      app: authdb
+  template:
+    metadata:
+      labels:
+        app: authdb
+    spec:
+      containers:
+        - name: authdb-container
+          image: mysql:latest
+          env:
+            - name: MYSQL_ROOT_PASSWORD
+              value: jossbee1234
+            - name: MYSQL_DATABASE
+              value: authdb
+            - name: MYSQL_USER
+              value: jossbeeAuth
+            - name: MYSQL_PASSWORD
+              value: jossbee1234
+          ports:
+            - containerPort: 3306
+          volumeMounts:
+            - name: authdb-data
+              mountPath: /var/lib/mysql
+  volumeClaimTemplates:
+    - metadata:
+        name: authdb-data
+      spec:
+        accessModes: [ "ReadWriteOnce" ]
+        resources:
+          requests:
+            storage: 500Mi

@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: auth-server-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: auth-server
+  template:
+    metadata:
+      labels:
+        app: auth-server
+    spec:
+      containers:
+        - name: auth-server-container
+          image: 124225/jossbee-auth-server:jossbee-auth-server
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 9191
+          envFrom:
+            - configMapRef:
+                name: auth-server-env-configmap
