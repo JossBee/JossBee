@@ -22,3 +22,9 @@ Handling connection for 3306
 Handling connection for 3306
 E0809 02:35:59.297471    9492 portforward.go:409] an error occurred forwarding 3306 -> 3306: error forwarding port 3306 to pod 2f8f6879727a3333dda057bef5ccd7e8c79e35bd1738453c7639fdb30be976bf, uid : Error response from daemon: No such container: 2f8f6879727a3333dda057bef5ccd7e8c79e35bd1738453c7639fdb30be976bf
 error: lost connection to pod
+Forwarding from 127.0.0.1:9191 -> 9191
+Forwarding from [::1]:9191 -> 9191
+Handling connection for 9191
+Handling connection for 9191
+with the following errors: [unable to create listener: Error listen tcp4 127.0.0.1:3306: bind: An attempt was made to access a socket in a way forbidden by its access permissions. unable to create listener: Error listen tcp6 [::1]:3306: bind: An attempt was made to access a socket in a way forbidden by its access permissions.]
+error: unable to listen on any of the requested ports: [{3306 3306}]
