@@ -35,3 +35,23 @@ Sjossbee-auth-service/src/main/java/com/jossbee/config/WebSecurityConfiguration.
 [jossbee-auth-service/src/main/java/com/jossbee/config/AuthorizationServerConfiguration.java,3\9\3987f907bc93fc4bbe0384c29118270bf074c01a
 x
 Hjossbee-auth-service/src/main/java/com/jossbee/model/AuthUserDetail.java,c\d\cd84037a02c8d33cd2e25e4e228a81cf2688c48d
+w
+Gjossbee-auth-service/src/main/java/com/jossbee/AuthorizationRunner.java,5\d\5d678de7dc1649971bebe79d854899103cdb3d2e
+e
+5kubernetes/services/auth-server-nodeport-service.yaml,c\6\c61dcf0852e124f5bba7ce5fe9bab67f7071c352
+_
+/kubernetes/statefulsets/authdb-statefulset.yaml,a\a\aac9fb255a2d9a849dfa6884d736f29ec9d60c6f
+`
+0kubernetes/services/authdb-nodeport-service.yaml,8\f\8f548d9242a7cc416bfd45a8ebc6f678bc43d78d
+O
+jossbee-auth-service/Dockerfile,e\a\ea216813d3dece003fa84ce87873a5da06d6bdd8
+b
+2kubernetes/deployments/auth-server-deployment.yaml,0\5\0514db5ec0b7816b4db7ffa0f9a6c2e1e2f5e961
+d
+4kubernetes/configMaps/auth-server-env-configmap.yaml,e\5\e50af0c3c6d24da542f3b6099460fa1f219595cb
+V
+&kubernetes/port-forwarding-commands.sh,4\9\49c87c42f0313afd6f684bbee59bb91c10c71e1a
+D
+kubernetes/nohup.out,0\0\00044ad10de96750e1153b5783a78e406cec02a9
+O
+kubernetes/kubernetes-runner.sh,d\6\d612c7512e9b5cfb366b21bcb6ba02acc58f052e
