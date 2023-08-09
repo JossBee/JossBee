@@ -23,8 +23,6 @@ S
 #jossbee-discovery-server/Dockerfile,b\a\ba14046c4bd6db58b3d778f288e3ed77bc659228
 L
 jossbee-auth-service/pom.xml,f\4\f4715d281c4dcf873cceba58c44158b88c6b954c
-N
-jossbee-auth-service/Readme.md,9\e\9e137b482c49c4120abc8a1e5943a1d5410da2cf
 R
 "jossbee-discovery-server/Readme.md,6\2\6282bfa1d2826b9af0b573b7279317407fb320f7
 g

@@ -1,6 +1,6 @@
 # My Project Name
 
-Authorization server for JossBee 🔥
+Authorization server for JossBee
 
 ## Docker Image
 
