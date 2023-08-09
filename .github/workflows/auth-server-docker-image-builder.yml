@@ -21,5 +21,5 @@ jobs:
 
       - name: Build and Push Docker Image
         run: |
-          docker build -t 124225/jossbee-auth-server:jossbee-auth-server ./jossbee-auth-service/Dockerfile
+          docker build -t 124225/jossbee-auth-server:jossbee-auth-server ./../jossbee-auth-service/Dockerfile
           docker push 124225/jossbee-auth-server:jossbee-auth-server
