@@ -1,4 +1,4 @@
-name: JossBee Auth Server Docker Image Builder
+name: auth-server-image-builder
 on:
   push:
     branches:
