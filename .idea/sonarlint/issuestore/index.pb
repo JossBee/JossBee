@@ -41,8 +41,6 @@ _
 0kubernetes/services/authdb-nodeport-service.yaml,8\f\8f548d9242a7cc416bfd45a8ebc6f678bc43d78d
 e
 5kubernetes/services/auth-server-nodeport-service.yaml,c\6\c61dcf0852e124f5bba7ce5fe9bab67f7071c352
-O
-jossbee-auth-service/Dockerfile,e\a\ea216813d3dece003fa84ce87873a5da06d6bdd8
 b
 2kubernetes/deployments/auth-server-deployment.yaml,0\5\0514db5ec0b7816b4db7ffa0f9a6c2e1e2f5e961
 O
@@ -53,3 +51,9 @@ V
 &kubernetes/port-forwarding-commands.sh,4\9\49c87c42f0313afd6f684bbee59bb91c10c71e1a
 d
 4kubernetes/configMaps/auth-server-env-configmap.yaml,e\5\e50af0c3c6d24da542f3b6099460fa1f219595cb
+\
+,jossbee-auth-service/docker-image-builder.sh,6\7\67087e57b76734ca649247cdd3a7cb369595ac43
+N
+jossbee-auth-service/Readme.md,9\e\9e137b482c49c4120abc8a1e5943a1d5410da2cf
+O
+jossbee-auth-service/Dockerfile,e\a\ea216813d3dece003fa84ce87873a5da06d6bdd8

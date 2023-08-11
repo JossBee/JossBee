@@ -41,8 +41,6 @@ _
 /kubernetes/statefulsets/authdb-statefulset.yaml,a\a\aac9fb255a2d9a849dfa6884d736f29ec9d60c6f
 `
 0kubernetes/services/authdb-nodeport-service.yaml,8\f\8f548d9242a7cc416bfd45a8ebc6f678bc43d78d
-O
-jossbee-auth-service/Dockerfile,e\a\ea216813d3dece003fa84ce87873a5da06d6bdd8
 b
 2kubernetes/deployments/auth-server-deployment.yaml,0\5\0514db5ec0b7816b4db7ffa0f9a6c2e1e2f5e961
 d
@@ -53,3 +51,9 @@ D
 kubernetes/nohup.out,0\0\00044ad10de96750e1153b5783a78e406cec02a9
 O
 kubernetes/kubernetes-runner.sh,d\6\d612c7512e9b5cfb366b21bcb6ba02acc58f052e
+\
+,jossbee-auth-service/docker-image-builder.sh,6\7\67087e57b76734ca649247cdd3a7cb369595ac43
+N
+jossbee-auth-service/Readme.md,9\e\9e137b482c49c4120abc8a1e5943a1d5410da2cf
+O
+jossbee-auth-service/Dockerfile,e\a\ea216813d3dece003fa84ce87873a5da06d6bdd8
