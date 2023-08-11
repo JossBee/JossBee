@@ -16,7 +16,7 @@ public class HouseConverterService {
         HouseDto houseDto = new HouseDto();
 
         houseDto.setId(house.getId());
-        houseDto.setIsActive(house.isActive());
+        houseDto.setIsActive(house.getIsActive());
         houseDto.setCreatedAt(house.getCreatedAt());
         houseDto.setCreatedBy(house.getCreatedBy());
         houseDto.setUpdatedAt(house.getUpdatedAt());

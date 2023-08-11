@@ -8,6 +8,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
+import java.util.List;
 
 @RestController
 @RequestMapping("/house")
@@ -25,5 +26,13 @@ public class HouseController {
     public ResponseEntity<Void> deleteHouse(@RequestHeader("authToken") String authToken, @RequestParam("id") String houseId) {
         houseService.deleteHouse(authToken, houseId);
         return ResponseEntity.noContent().build();
+    }
+
+    @GetMapping
+    public ResponseEntity<List<HouseDto>> getAllRegisteredHouse(@RequestHeader("authToken") String authToken,
+                                                                @RequestParam(name = "houseId", required = false) String houseId,
+                                                                @RequestParam(name = "title", required = false) String title) {
+        List<HouseDto> houses = houseService.getAllRegisteredHouses(authToken, houseId, title);
+        return ResponseEntity.status(HttpStatus.OK).body(houses);
     }
 }

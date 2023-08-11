@@ -24,7 +24,7 @@ public class House {
     private String id;
 
     @Field("active")
-    private boolean isActive;
+    private Boolean isActive;
 
     private LocalDateTime createdAt;
 

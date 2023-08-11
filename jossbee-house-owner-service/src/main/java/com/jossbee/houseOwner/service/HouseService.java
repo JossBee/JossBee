@@ -10,6 +10,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDateTime;
+import java.util.List;
 
 @Slf4j
 @Service
@@ -51,10 +52,20 @@ public class HouseService {
         House house = houseRepository.findHouseByOwnerIdAndHouseId(houseOwnerIdentifier, houseId)
                 .orElseThrow(() -> new ServiceException("Failed to find house with given houseId: " + houseId));
 
-        house.setActive(false);
+        house.setIsActive(false);
         house.setUpdatedAt(LocalDateTime.now());
         house.setUpdatedBy(houseOwnerIdentifier);
 
         houseRepository.save(house);
+    }
+
+    public List<HouseDto> getAllRegisteredHouses(String authToken, String houseId, String title) {
+        String houseOwnerIdentifier = jwtTokenDecoderService.extractIdentifierFormToken(authToken);
+
+        List<House> houses = houseRepository.findActiveHousesByOptionalCriteria(houseId, title, houseOwnerIdentifier);
+
+        return houses.stream()
+                .map(houseConverterService::convertModelToDto)
+                .toList();
     }
 }
