@@ -8,16 +8,20 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="jossbee-image-server" />
-        <module name="jossbee-discovery-server" />
+        <module name="jossbee-discovery-service" />
         <module name="jossbee-auth-service" />
         <module name="jossbee-house-owner-service" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="jossbee-discovery-server" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="jossbee-auth-service" options="-parameters" />
       <module name="jossbee-discovery-server" options="-parameters" />
+      <module name="jossbee-discovery-service" options="-parameters" />
       <module name="jossbee-house-owner-service" options="-parameters" />
       <module name="jossbee-image-server" options="-parameters" />
     </option>

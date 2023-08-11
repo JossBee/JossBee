@@ -13,8 +13,6 @@ S
 #jossbee-discovery-server/.gitignore,9\1\914799a1561871d5106e2c155e549864a140bb0b
 b
 2jossbee-auth-service/src/main/resources/banner.txt,7\2\7297e3af4cc127c4af495b555be2511fa4383902
-z
-Jjossbee-discovery-server/src/main/java/com/jossbee/EurekaServerRunner.java,5\e\5e112353a27180c608392efe128c4fd26165f6d6
 Å
 Qjossbee-auth-service/src/main/java/com/jossbee/service/UserDetailServiceImpl.java,6\e\6e7ba70bb00327b333e157c9cc9274a950213f32
 P
@@ -35,8 +33,6 @@ x
 Hjossbee-auth-service/src/main/java/com/jossbee/model/AuthUserDetail.java,c\d\cd84037a02c8d33cd2e25e4e228a81cf2688c48d
 w
 Gjossbee-auth-service/src/main/java/com/jossbee/AuthorizationRunner.java,5\d\5d678de7dc1649971bebe79d854899103cdb3d2e
-D
-kubernetes/nohup.out,0\0\00044ad10de96750e1153b5783a78e406cec02a9
 V
 &kubernetes/port-forwarding-commands.sh,4\9\49c87c42f0313afd6f684bbee59bb91c10c71e1a
 \
@@ -45,8 +41,6 @@ N
 jossbee-auth-service/Readme.md,9\e\9e137b482c49c4120abc8a1e5943a1d5410da2cf
 O
 jossbee-auth-service/Dockerfile,e\a\ea216813d3dece003fa84ce87873a5da06d6bdd8
-L
-jossbee-image-server/HELP.md,7\6\762cc030f78a15ff825f57c9ad653e5792bdac30
 Ü
 V.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_15_2.xml,b\d\bdbfdb59e6ef32595c3018589e354578eb11ef0c
 g
@@ -57,8 +51,6 @@ r
 B.idea/libraries/Maven__org_springframework_spring_beans_6_0_11.xml,e\0\e0de8a965a05cd748e6e25194fec53ff0a964ab8
 p
 @.idea/libraries/Maven__org_springframework_spring_web_6_0_11.xml,b\e\bec14fa46cb8a2b76ad082073dd682c9ea876b46
-Å
-Q.idea/sonarlint/securityhotspotstore/0/0/00044ad10de96750e1153b5783a78e406cec02a9,0\0\00e11e0841e2076219d2d4c0674673246d88e0ff
 Ö
 U.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_3_1_2.xml,1\0\1063b8e428a0cc459172501463ef795aeeb9f9f6
 }
@@ -83,8 +75,6 @@ t
 D.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_16.xml,9\c\9cdce717481016dd783eb185d20385f02fbc6c58
 v
 F.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_13.xml,0\2\02d343b9b5c40c9dc7299e4cf12f13714aa26b77
-w
-G.idea/sonarlint/issuestore/d/6/d612c7512e9b5cfb366b21bcb6ba02acc58f052e,4\b\4bf7c08fb86b26486a93bed32d2b788840d1b924
 Å
 Q.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_10_1_11.xml,3\b\3bea27f0bf502f0224037ab25c0bddc7188b15fc
 z
@@ -143,14 +133,10 @@ w
 G.idea/libraries/Maven__org_springframework_spring_expression_6_0_11.xml,4\b\4b81aa0c879e98b92070c9cb26c4d467584c1e12
 y
 I.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_15_2.xml,5\9\5935a6528c2d1e078babeff5c4a8c5aa67fad379
-w
-G.idea/sonarlint/issuestore/0/0/00044ad10de96750e1153b5783a78e406cec02a9,6\d\6dc5ef967b3854dcb4364c1ca0f558216a3c6ce3
 p
 @.idea/libraries/Maven__org_springframework_spring_jcl_6_0_11.xml,f\6\f641a3025c936a098b8c29f5f66e81ccdb757f62
 z
 J.idea/libraries/Maven__jakarta_activation_jakarta_activation_api_2_1_2.xml,4\c\4c4b8d5ce9959a02389efec430fc3128c2c0fbf2
-Å
-Q.idea/sonarlint/securityhotspotstore/d/6/d612c7512e9b5cfb366b21bcb6ba02acc58f052e,3\0\30e1e837fac4fd41ead00b6222a5441dc809b6db
 É
 S.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_3_1_2.xml,3\a\3ae2383b4e8998486792245cafcb215235c04cd0
 u
