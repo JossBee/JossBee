@@ -203,8 +203,6 @@ P
  jossbee-house-owner-service/mvnw,c\c\cc717331996fcc38025e72c6bc69401ad7555b3e
 T
 $jossbee-house-owner-service/mvnw.cmd,b\0\b09e72609917a0d8da1cbbdf62c48cdef8a4d2bd
-S
-#jossbee-house-owner-service/pom.xml,7\6\7640124904c26ed5f705910aa40daadb4ae8d8af
 U
 %jossbee-house-owner-service/Readme.md,e\3\e39bfdbcc686148d9114893370590292fa8140d5
 j

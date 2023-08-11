@@ -12,6 +12,7 @@
         <option value="$PROJECT_DIR$/jossbee-house-owner-service/pom.xml" />
         <option value="$PROJECT_DIR$/jossbee-image-server/pom.xml" />
         <option value="$PROJECT_DIR$/jossbee-discovery-server/pom.xml" />
+        <option value="$PROJECT_DIR$/jossbee-discovery-service/pom.xml" />
       </list>
     </option>
   </component>

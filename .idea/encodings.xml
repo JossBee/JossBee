@@ -3,8 +3,8 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/jossbee-auth-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/jossbee-auth-service/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/jossbee-discovery-server/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/jossbee-discovery-server/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/jossbee-discovery-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/jossbee-discovery-service/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/jossbee-house-owner-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/jossbee-image-server/src/main/java" charset="UTF-8" />
   </component>

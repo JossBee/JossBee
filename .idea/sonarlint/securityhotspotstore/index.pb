@@ -163,8 +163,6 @@ u
 E.idea/libraries/Maven__org_springframework_boot_spring_boot_3_1_2.xml,e\9\e9023264bb7f9a1d0c6f5847eccbc3993c37bce8
 k
 ;.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_1.xml,0\5\05f0f572ec14610641e0cd7daf36d819e5bcb74a
-S
-#jossbee-house-owner-service/pom.xml,7\6\7640124904c26ed5f705910aa40daadb4ae8d8af
 q
 A.idea/libraries/Maven__org_springframework_spring_core_6_0_11.xml,d\1\d148b80f36cfc7a7632b401aa4ff06c991981561
 w
