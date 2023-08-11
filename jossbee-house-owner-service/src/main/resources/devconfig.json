@@ -1,4 +1,9 @@
 {
     "SERVER_PORT": "8181",
-    "APPLICATION_NAME" : "jossbee-house-owner"
+    "APPLICATION_NAME": "jossbee-house-owner",
+    "MONGODB_HOST": "localhost",
+    "MONGODB_PORT": "27017",
+    "MONGODB_DATABASE": "jossbee",
+    "MONGODB_USERNAME": "jossbee",
+    "MONGODB_PASSWORD": "jossbee"
 }

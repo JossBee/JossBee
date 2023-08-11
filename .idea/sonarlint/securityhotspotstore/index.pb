@@ -135,8 +135,6 @@ o
 cjossbee-image-server/src/test/java/com/jossbee/image_server/JossbeeImageServerApplicationTests.java,8\4\849e56fe0bc22cc00f05a08625aee0977e178795
 q
 A.idea/libraries/Maven__org_springframework_spring_test_6_0_11.xml,f\2\f28e20f371742068738994dbf4ccf7fa7a601963
-™
-ijossbee-house-owner-service/src/main/java/com/jossbee/houseOwner/JossbeeHouseOwnerServiceApplication.java,0\5\05510652e7afcfc00ed44487d45b7aecf0208512
 ˆ
 X.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_15_2.xml,7\f\7f446eb5e8d238dda028010aaa5095c036f65d69
 w

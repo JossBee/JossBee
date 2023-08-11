@@ -193,8 +193,6 @@ t
 D.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_9_3.xml,6\0\6054de7cc6f0fb2d1bce9abbd2a58030693ab22b
 q
 Ajossbee-house-owner-service/.mvn/wrapper/maven-wrapper.properties,b\5\b5dcb97bdabd46ba38583c0fa0dbc5d269f85a17
-™
-ijossbee-house-owner-service/src/main/java/com/jossbee/houseOwner/JossbeeHouseOwnerServiceApplication.java,0\5\05510652e7afcfc00ed44487d45b7aecf0208512
 ž
 njossbee-house-owner-service/src/test/java/com/jossbee/houseOwner/JossbeeHouseOwnerServiceApplicationTests.java,7\2\72d456619aa895f9d79b36c594f6596467edae7e
 V
