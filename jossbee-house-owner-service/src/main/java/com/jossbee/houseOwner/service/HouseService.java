@@ -43,19 +43,18 @@ public class HouseService {
 
     private void fetchUserInformation(HouseDto houseDto, String userId) {
         //TODO: Add code to fetch user-related information from auth-server.
-
     }
 
     public void deleteHouse(String authToken, String houseId) {
-        String houseOwnerIdentifier = jwtTokenDecoderService.extractIdentifierFormToken(authToken);
-
-        House house = houseRepository.findByHouseOwnerIdAndHouseId(houseOwnerIdentifier, houseId)
-                .orElseThrow(() -> new ServiceException("Failed to find house with "))
-
-        house.setActive(false);
-        house.setUpdatedAt(LocalDateTime.now());
-        house.setUpdatedBy(houseOwnerIdentifier);
-
-        houseRepository.save(house);
+//        String houseOwnerIdentifier = jwtTokenDecoderService.extractIdentifierFormToken(authToken);
+//
+//        House house = houseRepository.findByHouseOwnerIdAndHouseId(houseOwnerIdentifier, houseId)
+//                .orElseThrow(() -> new ServiceException("Failed to find house with given houseId: " + houseId));
+//
+//        house.setActive(false);
+//        house.setUpdatedAt(LocalDateTime.now());
+//        house.setUpdatedBy(houseOwnerIdentifier);
+//
+//        houseRepository.save(house);
     }
 }

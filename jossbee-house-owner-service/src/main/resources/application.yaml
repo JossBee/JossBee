@@ -8,3 +8,4 @@ spring:
       database: ${MONGODB_DATABASE:jossbee}
       username: ${MONGODB_USERNAME:jossbee}
       password: ${MONGODB_PASSWORD:jossbee}
+      authentication-database: admin

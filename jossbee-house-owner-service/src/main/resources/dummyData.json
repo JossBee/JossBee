@@ -1,0 +1,76 @@
+[
+    {
+        "id": "123456",
+        "isActive": true,
+        "createdAt": "2023-08-12T10:30:00",
+        "createdBy": "user123",
+        "updatedAt": "2023-08-12T14:45:00",
+        "updatedBy": "user456",
+        "title": "Cozy Cabin Retreat",
+        "description": "A beautiful cabin surrounded by nature.",
+        "numberOfBedRooms": 2,
+        "numberOfBathrooms": 2,
+        "guestsCapacity": 4,
+        "pricePerNight": 120.0,
+        "host": {
+            "hostUuid": "host-123",
+            "name": "John Doe",
+            "hostProfilePictureUrl": "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        },
+        "address": {
+            "street": "123 Main Street",
+            "latitude": 42.123456,
+            "longitude": -71.987654,
+            "city": "Springfield",
+            "state": "IL",
+            "country": "USA",
+            "zipCode": "12345"
+        },
+        "amenities": [
+            "Wi-Fi",
+            "Parking",
+            "Kitchen"
+        ],
+        "photos": [
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp1jUl09aJQaP20dU2bAWotA0T1Tdq5jL6iuoD3U1PTQ&s",
+            "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGhvdXNlfGVufDB8fDB8fHww&w=1000&q=80"
+        ]
+    },
+    {
+        "id": "789012",
+        "isActive": true,
+        "createdAt": "2023-08-15T09:00:00",
+        "createdBy": "user789",
+        "updatedAt": "2023-08-15T12:30:00",
+        "updatedBy": "user012",
+        "title": "Seaside Getaway",
+        "description": "A charming cottage by the beach.",
+        "numberOfBedRooms": 3,
+        "numberOfBathrooms": 2,
+        "guestsCapacity": 6,
+        "pricePerNight": 180.0,
+        "host": {
+            "hostUuid": "host-456",
+            "name": "Jane Smith",
+            "hostProfilePictureUrl": "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=1600"
+        },
+        "address": {
+            "street": "456 Beach Road",
+            "latitude": 38.987654,
+            "longitude": -75.123456,
+            "city": "Ocean City",
+            "state": "MD",
+            "country": "USA",
+            "zipCode": "54321"
+        },
+        "amenities": [
+            "Wi-Fi",
+            "Beachfront",
+            "Outdoor Patio"
+        ],
+        "photos": [
+            "https://img.staticmb.com/mbcontent/images/uploads/2022/12/Most-Beautiful-House-in-the-World.jpg",
+            "https://foyr.com/learn/wp-content/uploads/2022/05/types-of-rooms-in-a-house.png"
+        ]
+    }
+]

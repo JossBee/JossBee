@@ -9,5 +9,5 @@ import java.util.Optional;
 @Repository
 public interface HouseRepository extends MongoRepository<House, String> {
 
-    Optional<House> findByHouseOwnerIdAndHouseId(String houseOwnerIdentifier, String houseId);
+//    Optional<House> findByHouseOwnerIdAndHouseId(String houseOwnerIdentifier, String houseId);
 }
