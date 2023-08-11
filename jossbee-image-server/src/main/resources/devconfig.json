@@ -4,5 +4,5 @@
     "AWS_S3_ACCESS_KEY": "team_jossBee",
     "AWS_S3_SECRET_KEY": "team_jossBee",
     "APPLICATION_NAME": "jossbee-image-server",
-    "AWS_S3_BUCKET": "jossbee-house-owner"
+    "AWS_S3_BUCKET": "jossbee"
 }

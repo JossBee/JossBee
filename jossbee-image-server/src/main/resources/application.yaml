@@ -5,4 +5,4 @@ s3:
   host: ${S3_HOST:https://s3.localhost.localstack.cloud:4566}
   accessKey: ${AWS_S3_ACCESS_KEY:team_jossBee}
   secretKey: ${AWS_S3_SECRET_KEY:team_jossBee}
-  bucketName: ${AWS_S3_BUCKET:jossbee-house-owner}
+  bucketName: ${AWS_S3_BUCKET:jossbee}

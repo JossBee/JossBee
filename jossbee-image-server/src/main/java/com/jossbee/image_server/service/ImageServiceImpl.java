@@ -21,6 +21,9 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.Objects;
 import java.util.UUID;
 
@@ -87,6 +90,14 @@ public class ImageServiceImpl implements ImageService {
                 .build();
 
         s3Client.putObject(putObjectRequest, RequestBody.fromFile(imageFile));
+
+        //Delete the temporary resized file for better handling
+        Path filePath = Paths.get(imageFile.getPath());
+        try {
+            Files.delete(filePath);
+        } catch (IOException e) {
+            log.error("Error deleting the file, error is: {}", e.getMessage(), e);
+        }
 
         return s3Client.utilities()
                 .getUrl(GetUrlRequest.builder()

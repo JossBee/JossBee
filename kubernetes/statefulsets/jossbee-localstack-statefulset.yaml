@@ -1,0 +1,40 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: localstack-statefulset
+  namespace: localstack-namespace
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: localstack
+  serviceName: "localstack-service"
+  template:
+    metadata:
+      labels:
+        app: localstack
+    spec:
+      containers:
+        - name: localstack-container
+          image: localstack/localstack
+          ports:
+            - containerPort: 4566
+            - containerPort: 4571
+          env:
+            - name: DEBUG
+              value: "1"
+            - name: DATA_DIR
+              value: /tmp/localstack/data
+            - name: SERVICES
+              value: sqs
+          volumeMounts:
+            - name: localstack-data-volume
+              mountPath: /tmp/localstack/data
+  volumeClaimTemplates:
+    - metadata:
+        name: localstack-data-volume
+      spec:
+        accessModes: [ "ReadWriteOnce" ]
+        resources:
+          requests:
+            storage: 500Mi
