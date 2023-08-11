@@ -46,15 +46,15 @@ public class HouseService {
     }
 
     public void deleteHouse(String authToken, String houseId) {
-//        String houseOwnerIdentifier = jwtTokenDecoderService.extractIdentifierFormToken(authToken);
-//
-//        House house = houseRepository.findByHouseOwnerIdAndHouseId(houseOwnerIdentifier, houseId)
-//                .orElseThrow(() -> new ServiceException("Failed to find house with given houseId: " + houseId));
-//
-//        house.setActive(false);
-//        house.setUpdatedAt(LocalDateTime.now());
-//        house.setUpdatedBy(houseOwnerIdentifier);
-//
-//        houseRepository.save(house);
+        String houseOwnerIdentifier = jwtTokenDecoderService.extractIdentifierFormToken(authToken);
+
+        House house = houseRepository.findHouseByOwnerIdAndHouseId(houseOwnerIdentifier, houseId)
+                .orElseThrow(() -> new ServiceException("Failed to find house with given houseId: " + houseId));
+
+        house.setActive(false);
+        house.setUpdatedAt(LocalDateTime.now());
+        house.setUpdatedBy(houseOwnerIdentifier);
+
+        houseRepository.save(house);
     }
 }

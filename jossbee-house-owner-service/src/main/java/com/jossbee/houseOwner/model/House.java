@@ -23,6 +23,7 @@ public class House {
     @Id
     private String id;
 
+    @Field("active")
     private boolean isActive;
 
     private LocalDateTime createdAt;
@@ -35,7 +36,7 @@ public class House {
 
     private String updatedBy;
 
-    @Field("field")
+    @Field("title")
     @NotBlank(message = "Title is mandatory")
     @NotEmpty(message = "Title is mandatory")
     private String title;
