@@ -19,4 +19,7 @@ services:
       - DATA_DIR=/tmp/localstack/data
       - SERVICES=sqs
     volumes:
-      - ./.temp/localstack:/tmp/localstack
+      - localstack-data:/tmp/localstack/data
+
+volumes:
+  localstack-data:
