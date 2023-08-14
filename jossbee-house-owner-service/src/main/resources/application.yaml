@@ -3,9 +3,4 @@ spring:
     name: ${APPLICATION_NAME:jossbee-house-owner}
   data:
     mongodb:
-      host: ${MONGODB_HOST:localhost}
-      port: ${MONGODB_PORT:27017}
-      database: ${MONGODB_DATABASE:jossbee}
-      username: ${MONGODB_USERNAME:jossbee}
-      password: ${MONGODB_PASSWORD:jossbee}
-      authentication-database: admin
+      uri: mongodb+srv://jossbee:jossbee@cluster0.bkwsecp.mongodb.net/?retryWrites=true&w=majority

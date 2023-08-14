@@ -25,8 +25,6 @@ x
 Hjossbee-auth-service/src/main/java/com/jossbee/model/AuthUserDetail.java,c\d\cd84037a02c8d33cd2e25e4e228a81cf2688c48d
 w
 Gjossbee-auth-service/src/main/java/com/jossbee/AuthorizationRunner.java,5\d\5d678de7dc1649971bebe79d854899103cdb3d2e
-V
-&kubernetes/port-forwarding-commands.sh,4\9\49c87c42f0313afd6f684bbee59bb91c10c71e1a
 \
 ,jossbee-auth-service/docker-image-builder.sh,6\7\67087e57b76734ca649247cdd3a7cb369595ac43
 N
