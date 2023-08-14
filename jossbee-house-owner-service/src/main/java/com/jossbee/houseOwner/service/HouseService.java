@@ -6,6 +6,9 @@ import com.jossbee.houseOwner.model.House;
 import com.jossbee.houseOwner.repository.HouseRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.data.mongodb.core.MongoTemplate;
+import org.springframework.data.mongodb.core.query.Criteria;
+import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -17,6 +20,7 @@ import java.util.List;
 @RequiredArgsConstructor
 public class HouseService {
 
+    private final MongoTemplate mongoTemplate;
     private final HouseRepository houseRepository;
     private final HouseConverterService houseConverterService;
     private final JwtTokenDecoderService jwtTokenDecoderService;
@@ -59,10 +63,26 @@ public class HouseService {
         houseRepository.save(house);
     }
 
-    public List<HouseDto> getAllRegisteredHouses(String authToken, String houseId, String title) {
-        String houseOwnerIdentifier = jwtTokenDecoderService.extractIdentifierFormToken(authToken);
+    public List<HouseDto> getAllRegisteredHouses(String authToken, String title, String houseId) {
 
-        List<House> houses = houseRepository.findActiveHousesByOptionalCriteria(houseId, title, houseOwnerIdentifier);
+        String houseOwnerId = jwtTokenDecoderService.extractIdentifierFormToken(authToken);
+
+        List<House> houses;
+        Query query = new Query();
+
+        Criteria criteria = Criteria.where("host.hostUuid").is(houseOwnerId);
+
+        if (title != null && !title.isEmpty()) {
+            criteria = criteria.and("title").regex(title, "i");
+        }
+
+        if (houseId != null && !houseId.isEmpty()) {
+            criteria = criteria.and("_id").is(houseId);
+        }
+
+        query.addCriteria(criteria);
+
+        houses = mongoTemplate.find(query, House.class);
 
         return houses.stream()
                 .map(houseConverterService::convertModelToDto)

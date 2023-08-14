@@ -14,11 +14,9 @@ public interface HouseRepository extends MongoRepository<House, String> {
     @Query(value = "{ 'host.hostUuid' : ?0, 'id' : ?1, 'isActive' : true }")
     Optional<House> findHouseByOwnerIdAndHouseId(String houseOwnerIdentifier, String houseId);
 
-    @Query("{$and: [" +
-            "{'_id': ?0}, " +
-            "{'title': ?1}, " +
-            "'host.hostUuid': ?2, " +
-            "'active': true" +
-            "]}")
-    List<House> findActiveHousesByOptionalCriteria(String houseId, String title, String hostUuid);
+    @Query(value = "{'host.hostUuid' :  ?0, 'isActive' :  true}")
+    List<House> findByHouseOwnerId(String houseOwnerId);
+
+    @Query(value = "{'host.hostUuid': ?0, $text: { $search: ?1 }, 'isActive': true}")
+    List<House> findByHouseOwnerIdAndTitle(String houseOwnerId, String title);
 }

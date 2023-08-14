@@ -9,20 +9,12 @@ n
 Sjossbee-auth-service/src/main/java/com/jossbee/repository/UserDetailRepository.java,0\6\066b425f0287035f17632dfbcf95c6199343816a
 n
 >jossbee-auth-service/src/main/java/com/jossbee/model/User.java,a\d\adf84d8480b4c589b3918b115576dcc2fb39bdff
-S
-#jossbee-discovery-server/.gitignore,9\1\914799a1561871d5106e2c155e549864a140bb0b
 b
 2jossbee-auth-service/src/main/resources/banner.txt,7\2\7297e3af4cc127c4af495b555be2511fa4383902
 Å
 Qjossbee-auth-service/src/main/java/com/jossbee/service/UserDetailServiceImpl.java,6\e\6e7ba70bb00327b333e157c9cc9274a950213f32
-P
- jossbee-discovery-server/pom.xml,2\6\266b47f4017bcbed7aee0148130930fca93f5ff7
-S
-#jossbee-discovery-server/Dockerfile,b\a\ba14046c4bd6db58b3d778f288e3ed77bc659228
 L
 jossbee-auth-service/pom.xml,f\4\f4715d281c4dcf873cceba58c44158b88c6b954c
-R
-"jossbee-discovery-server/Readme.md,6\2\6282bfa1d2826b9af0b573b7279317407fb320f7
 g
 7jossbee-auth-service/src/main/resources/application.yml,5\c\5c805d9db0edaf3103ca64e9876b49fbfe9fe7cd
 É
@@ -153,8 +145,6 @@ z
 J.idea/libraries/Maven__jakarta_activation_jakarta_activation_api_2_1_2.xml,4\c\4c4b8d5ce9959a02389efec430fc3128c2c0fbf2
 û
 njossbee-house-owner-service/src/test/java/com/jossbee/houseOwner/JossbeeHouseOwnerServiceApplicationTests.java,7\2\72d456619aa895f9d79b36c594f6596467edae7e
-q
-Ajossbee-house-owner-service/.mvn/wrapper/maven-wrapper.properties,b\5\b5dcb97bdabd46ba38583c0fa0dbc5d269f85a17
 É
 S.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_3_1_2.xml,3\a\3ae2383b4e8998486792245cafcb215235c04cd0
 u
@@ -224,3 +214,39 @@ Sjossbee-image-server/src/main/java/com/jossbee/image_server/config/AwsS3Config.
 :
 
 .gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
+R
+".github/workflows/docker-image.yml,a\9\a9559c5bf0b777abb52ef983bf739d20d32d0a24
+9
+	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+Q
+!jossbee-discovery-service/pom.xml,7\4\74408cfbb56d83f3d13736d9460e45585c673738
+{
+Kjossbee-discovery-service/src/main/java/com/jossbee/EurekaServerRunner.java,f\e\fe643cb7a9b0b9c3dad602226c871143d853c868
+T
+$jossbee-discovery-service/.gitignore,c\d\cd3b71e9bdfca8b3aaa8574e7b5f822efb6a718a
+T
+$jossbee-discovery-service/Dockerfile,8\e\8ea9aa991b8720036216f34e3a99e311717cf1cf
+S
+#jossbee-discovery-service/Readme.md,2\c\2c1824b59792e19db87005e9ee8c57672b70d12e
+ñ
+fjossbee-house-owner-service/src/main/java/com/jossbee/houseOwner/exception/GlobalExceptionHandler.java,f\9\f9d8ab98942bdaf83eaed80f8bec6ca6a7549cd4
+ê
+`jossbee-house-owner-service/src/main/java/com/jossbee/houseOwner/exception/ServiceException.java,9\7\9778e388e6c10acf4f07f79b38dc0ebdbb0ae3bf
+Å
+Qjossbee-house-owner-service/src/main/java/com/jossbee/houseOwner/dto/HostDto.java,0\e\0ed420df56503bf66c16f8fd3fdb055cb468ed7a
+Ñ
+Tjossbee-house-owner-service/src/main/java/com/jossbee/houseOwner/dto/AddressDto.java,0\c\0ce97cb040df9eb2a7f8bbadbdc234d6b239191b
+Ä
+Pjossbee-house-owner-service/src/main/java/com/jossbee/houseOwner/model/Host.java,f\6\f6db43e59ef1ae33dfbe7e6560b97c6e111ac185
+\
+,.idea/inspectionProfiles/Project_Default.xml,4\9\496a238a6afa168dbaf6efd37bb459331589579c
+Ç
+Rjossbee-house-owner-service/src/main/java/com/jossbee/houseOwner/dto/HouseDto.java,0\8\0856119724af417f22c42f1fdadbef0a57c83c59
+S
+#jossbee-house-owner-service/pom.xml,7\6\7640124904c26ed5f705910aa40daadb4ae8d8af
+É
+Sjossbee-house-owner-service/src/main/java/com/jossbee/houseOwner/model/Address.java,5\4\54e2d6f2050bdde17f95c268fc2e3a9f9b86b306
+ô
+ijossbee-house-owner-service/src/main/java/com/jossbee/houseOwner/JossbeeHouseOwnerServiceApplication.java,0\5\05510652e7afcfc00ed44487d45b7aecf0208512
+q
+Ajossbee-house-owner-service/.mvn/wrapper/maven-wrapper.properties,b\5\b5dcb97bdabd46ba38583c0fa0dbc5d269f85a17

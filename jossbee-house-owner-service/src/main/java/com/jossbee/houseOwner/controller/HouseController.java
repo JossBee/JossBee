@@ -30,9 +30,9 @@ public class HouseController {
 
     @GetMapping
     public ResponseEntity<List<HouseDto>> getAllRegisteredHouse(@RequestHeader("authToken") String authToken,
-                                                                @RequestParam(name = "houseId", required = false) String houseId,
-                                                                @RequestParam(name = "title", required = false) String title) {
-        List<HouseDto> houses = houseService.getAllRegisteredHouses(authToken, houseId, title);
+                                                                @RequestParam(name = "title", required = false) String title,
+                                                                @RequestParam(name = "houseId", required = false)String houseId) {
+        List<HouseDto> houses = houseService.getAllRegisteredHouses(authToken, title, houseId);
         return ResponseEntity.status(HttpStatus.OK).body(houses);
     }
 }
