@@ -1,5 +1,6 @@
 package com.jossbee.houseOwner.service;
 
+import com.jossbee.houseOwner.converter.HouseConverterService;
 import com.jossbee.houseOwner.dto.HouseDto;
 import com.jossbee.houseOwner.exception.ServiceException;
 import com.jossbee.houseOwner.model.House;

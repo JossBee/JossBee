@@ -1,0 +1,13 @@
+Error from server (NotFound): services "localstack-service" not found
+Forwarding from 127.0.0.1:4566 -> 4566
+Forwarding from [::1]:4566 -> 4566
+Handling connection for 4566
+E0817 20:00:41.839211    7092 portforward.go:409] an error occurred forwarding 4566 -> 4566: error forwarding port 4566 to pod ed375bdfac7fb4d1914f82f8bf3de6cdf150518733415f9576d0b62bfffbbf8b, uid : exit status 1: 2023/08/17 14:00:41 socat[7690] E connect(5, AF=2 127.0.0.1:4566, 16): Connection refused
+error: lost connection to pod
+Forwarding from 127.0.0.1:4566 -> 4566
+Forwarding from [::1]:4566 -> 4566
+Handling connection for 4566
+Handling connection for 4566
+Handling connection for 4566
+Handling connection for 4566
+Handling connection for 4566

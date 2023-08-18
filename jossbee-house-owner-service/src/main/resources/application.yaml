@@ -3,4 +3,4 @@ spring:
     name: ${APPLICATION_NAME:jossbee-house-owner}
   data:
     mongodb:
-      uri: mongodb+srv://jossbee:jossbee@cluster0.bkwsecp.mongodb.net/?retryWrites=true&w=majority
+      uri: mongodb+srv://jossbee:PE2jfY8235ongk95@cluster0.k8a4zdv.mongodb.net/jossbee?retryWrites=true&w=majority

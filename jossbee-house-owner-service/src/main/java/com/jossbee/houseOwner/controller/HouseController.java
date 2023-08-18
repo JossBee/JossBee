@@ -11,7 +11,7 @@ import javax.validation.Valid;
 import java.util.List;
 
 @RestController
-@RequestMapping("/house")
+@RequestMapping("/house/v1")
 @RequiredArgsConstructor
 public class HouseController {
 
