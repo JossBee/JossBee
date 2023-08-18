@@ -241,9 +241,6 @@ k
 ;kubernetes/statefulsets/jossbee-localstack-statefulset.yaml,0\c\0cf00df4c2f468b91dc53edd6b9bb32d47a8bbac
 L
 jossbee-image-server/pom.xml,1\8\18afcff31a5d687ac2ad75bec4343988826365a3
-:
-
-.gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
 ê
 `jossbee-house-owner-service/src/main/java/com/jossbee/houseOwner/repository/HouseRepository.java,8\c\8cbe44bd3465dd35f62d7d3677c414e745a83e09
 é

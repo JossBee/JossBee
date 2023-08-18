@@ -1,1 +1,5 @@
 /experiments/volume/
+/DockerComposeForQuickStarts/data/
+/DockerComposeForQuickStarts/kafka-data/
+/DockerComposeForQuickStarts/zookeeper-data/
+/DockerComposeForQuickStarts/zookeeper-logs/

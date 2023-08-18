@@ -69,6 +69,9 @@ public class HouseService {
         house.setUpdatedBy(houseOwnerIdentifier);
 
         houseRepository.save(house);
+
+        HouseDto houseDto1 = houseMapper.convertModelToDto(house);
+        kafkaProducerService.publishHouseDtoToKafka(houseDto1, UpdateType.DELETE.name());
     }
 
     public List<HouseDto> getAllRegisteredHouses(String authToken, String title, String houseId) {

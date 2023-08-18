@@ -243,9 +243,6 @@ L
 jossbee-image-server/pom.xml,1\8\18afcff31a5d687ac2ad75bec4343988826365a3
 O
 kubernetes/kubernetes-runner.sh,d\6\d612c7512e9b5cfb366b21bcb6ba02acc58f052e
-:
-
-.gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
 é
 ^jossbee-image-server/src/main/java/com/jossbee/image_server/JossbeeImageServerApplication.java,6\6\66609320e69548d1692e5e34a0ffed7fa7f054a1
 ê
