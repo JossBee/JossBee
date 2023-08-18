@@ -4,10 +4,4 @@ spring:
   data:
     mongodb:
       uri: mongodb+srv://jossbee:PE2jfY8235ongk95@cluster0.k8a4zdv.mongodb.net/jossbee?retryWrites=true&w=majority
-  kafka:
-    producer:
-      key-serializer: org.apache.kafka.common.serialization.StringSerializer
-      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
-kafka:
-  zookeeper-address: localhost:9092
-house_topic: house-topic
+house_topic: house_topic
