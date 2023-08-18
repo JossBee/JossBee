@@ -197,8 +197,6 @@ r
 B.idea/libraries/Maven__io_micrometer_micrometer_commons_1_11_2.xml,e\f\efef0681214f82be7ad4b1e78781c42c2f2c3eae
 t
 D.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_9_3.xml,6\0\6054de7cc6f0fb2d1bce9abbd2a58030693ab22b
-U
-%jossbee-house-owner-service/Readme.md,e\3\e39bfdbcc686148d9114893370590292fa8140d5
 d
 4kubernetes/configMaps/auth-server-env-configmap.yaml,e\5\e50af0c3c6d24da542f3b6099460fa1f219595cb
 b
