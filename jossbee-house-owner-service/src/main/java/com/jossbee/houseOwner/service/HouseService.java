@@ -1,6 +1,6 @@
 package com.jossbee.houseOwner.service;
 
-import com.jossbee.houseOwner.converter.HouseConverterService;
+import com.jossbee.houseOwner.mapper.HouseMapper;
 import com.jossbee.houseOwner.dto.HouseDto;
 import com.jossbee.houseOwner.exception.ServiceException;
 import com.jossbee.houseOwner.model.House;
@@ -23,7 +23,7 @@ public class HouseService {
 
     private final MongoTemplate mongoTemplate;
     private final HouseRepository houseRepository;
-    private final HouseConverterService houseConverterService;
+    private final HouseMapper houseMapper;
     private final JwtTokenDecoderService jwtTokenDecoderService;
 
     @Transactional
@@ -33,9 +33,9 @@ public class HouseService {
 
         addMetaInformation(houseDto, houseOwnerIdentifier);
 
-        House house = houseRepository.save(houseConverterService.convertDtoToModel(houseDto));
+        House house = houseRepository.save(houseMapper.convertDtoToModel(houseDto));
 
-        return houseConverterService.convertModelToDto(house);
+        return houseMapper.convertModelToDto(house);
     }
 
 
@@ -86,7 +86,7 @@ public class HouseService {
         houses = mongoTemplate.find(query, House.class);
 
         return houses.stream()
-                .map(houseConverterService::convertModelToDto)
+                .map(houseMapper::convertModelToDto)
                 .toList();
     }
 }

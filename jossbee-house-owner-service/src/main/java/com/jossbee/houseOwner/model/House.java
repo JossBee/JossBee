@@ -7,10 +7,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
 
 import javax.validation.Valid;
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Positive;
+import javax.validation.constraints.*;
 import java.time.LocalDateTime;
 import java.util.List;
 
@@ -60,7 +57,7 @@ public class House {
     @Positive(message = "Price per night must be positive")
     private double pricePerNight;
 
-    @Positive(message = "Discount value must be greater than 0")
+    @Min(value = 0, message = "Discount value must be greater than or equal to 0")
     private double discount;
 
     @Valid

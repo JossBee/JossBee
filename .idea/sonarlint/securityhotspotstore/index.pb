@@ -231,8 +231,6 @@ fjossbee-house-owner-service/src/main/java/com/jossbee/houseOwner/exception/Glob
 Tjossbee-house-owner-service/src/main/java/com/jossbee/houseOwner/dto/AddressDto.java,0\c\0ce97cb040df9eb2a7f8bbadbdc234d6b239191b
 \
 ,.idea/inspectionProfiles/Project_Default.xml,4\9\496a238a6afa168dbaf6efd37bb459331589579c
-‚
-Rjossbee-house-owner-service/src/main/java/com/jossbee/houseOwner/dto/HouseDto.java,0\8\0856119724af417f22c42f1fdadbef0a57c83c59
 ƒ
 Sjossbee-house-owner-service/src/main/java/com/jossbee/houseOwner/model/Address.java,5\4\54e2d6f2050bdde17f95c268fc2e3a9f9b86b306
 ™

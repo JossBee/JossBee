@@ -1,11 +1,11 @@
-package com.jossbee.houseOwner.converter;
+package com.jossbee.houseOwner.mapper;
 
 import com.jossbee.houseOwner.dto.CategoryDto;
 import com.jossbee.houseOwner.model.Category;
 import org.springframework.stereotype.Component;
 
 @Component
-public class CategoryConverterService {
+public class CategoryMapper {
 
     public CategoryDto categoryToDto(Category category) {
         CategoryDto dto = new CategoryDto();

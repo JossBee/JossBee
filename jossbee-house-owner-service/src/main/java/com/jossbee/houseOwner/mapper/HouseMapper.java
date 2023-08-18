@@ -1,16 +1,18 @@
-package com.jossbee.houseOwner.converter;
+package com.jossbee.houseOwner.mapper;
 
 import com.jossbee.houseOwner.dto.AddressDto;
+import com.jossbee.houseOwner.dto.CategoryDto;
 import com.jossbee.houseOwner.dto.HostDto;
 import com.jossbee.houseOwner.dto.HouseDto;
 import com.jossbee.houseOwner.exception.ServiceException;
 import com.jossbee.houseOwner.model.Address;
+import com.jossbee.houseOwner.model.Category;
 import com.jossbee.houseOwner.model.Host;
 import com.jossbee.houseOwner.model.House;
 import org.springframework.stereotype.Component;
 
 @Component
-public class HouseConverterService {
+public class HouseMapper {
 
     public HouseDto convertModelToDto(House house) {
         HouseDto houseDto = new HouseDto();
@@ -27,6 +29,7 @@ public class HouseConverterService {
         houseDto.setNumberOfBathrooms(house.getNumberOfBathrooms());
         houseDto.setGuestsCapacity(house.getGuestsCapacity());
         houseDto.setPricePerNight(house.getPricePerNight());
+        houseDto.setDiscount(house.getDiscount());
 
         if (house.getHost() != null) {
             houseDto.setHost(convertHostToDto(house.getHost()));
@@ -36,10 +39,22 @@ public class HouseConverterService {
             houseDto.setAddress(convertAddressToDto(house.getAddress()));
         }
 
+        if (house.getCategory() != null) {
+            houseDto.setCategory(convertCategoryToDto(house.getCategory()));
+        }
+
         houseDto.setAmenities(house.getAmenities());
         houseDto.setPhotos(house.getPhotos());
 
         return houseDto;
+    }
+
+    private CategoryDto convertCategoryToDto(Category category) {
+        return CategoryDto.builder()
+                .id(category.getId())
+                .name(category.getName())
+                .imageUrl(category.getImageUrl())
+                .build();
     }
 
     private HostDto convertHostToDto(Host host) {
@@ -75,7 +90,8 @@ public class HouseConverterService {
                 .numberOfBedRooms(houseDto.getNumberOfBedRooms())
                 .numberOfBathrooms(houseDto.getNumberOfBathrooms())
                 .guestsCapacity(houseDto.getGuestsCapacity())
-                .pricePerNight(houseDto.getPricePerNight());
+                .pricePerNight(houseDto.getPricePerNight())
+                .discount(houseDto.getDiscount());
 
         if (houseDto.getHost() != null) {
             houseBuilder.host(Host.builder()
@@ -94,6 +110,14 @@ public class HouseConverterService {
                     .state(houseDto.getAddress().getState())
                     .country(houseDto.getAddress().getCountry())
                     .zipCode(houseDto.getAddress().getZipCode())
+                    .build());
+        }
+
+        if (houseDto.getCategory() != null) {
+            houseBuilder.category(Category.builder()
+                    .id(houseDto.getCategory().getId())
+                    .name(houseDto.getCategory().getName())
+                    .imageUrl(houseDto.getCategory().getImageUrl())
                     .build());
         }
 
