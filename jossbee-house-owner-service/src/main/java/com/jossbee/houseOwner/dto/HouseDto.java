@@ -23,6 +23,8 @@ import static com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL;
 @JsonInclude(NON_NULL)
 public class HouseDto {
 
+    private String updateType;
+
     private String id;
 
     private Boolean isActive;

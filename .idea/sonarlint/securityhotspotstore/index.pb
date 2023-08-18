@@ -233,16 +233,12 @@ Tjossbee-house-owner-service/src/main/java/com/jossbee/houseOwner/dto/AddressDto
 ,.idea/inspectionProfiles/Project_Default.xml,4\9\496a238a6afa168dbaf6efd37bb459331589579c
 ƒ
 Sjossbee-house-owner-service/src/main/java/com/jossbee/houseOwner/model/Address.java,5\4\54e2d6f2050bdde17f95c268fc2e3a9f9b86b306
-™
-ijossbee-house-owner-service/src/main/java/com/jossbee/houseOwner/JossbeeHouseOwnerServiceApplication.java,0\5\05510652e7afcfc00ed44487d45b7aecf0208512
 q
 Ajossbee-house-owner-service/.mvn/wrapper/maven-wrapper.properties,b\5\b5dcb97bdabd46ba38583c0fa0dbc5d269f85a17
 e
 5DockerComposeForQuickStarts/mongo-docker-compose.yaml,6\0\60e736a0a64b7c2f0c0da7759557f6ebf9ed0070
 k
 ;kubernetes/statefulsets/jossbee-localstack-statefulset.yaml,0\c\0cf00df4c2f468b91dc53edd6b9bb32d47a8bbac
-S
-#jossbee-house-owner-service/pom.xml,7\6\7640124904c26ed5f705910aa40daadb4ae8d8af
 L
 jossbee-image-server/pom.xml,1\8\18afcff31a5d687ac2ad75bec4343988826365a3
 O

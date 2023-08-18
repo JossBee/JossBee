@@ -1,8 +1,9 @@
 package com.jossbee.houseOwner.service;
 
-import com.jossbee.houseOwner.mapper.HouseMapper;
+import com.jossbee.houseOwner.constants.UpdateType;
 import com.jossbee.houseOwner.dto.HouseDto;
 import com.jossbee.houseOwner.exception.ServiceException;
+import com.jossbee.houseOwner.mapper.HouseMapper;
 import com.jossbee.houseOwner.model.House;
 import com.jossbee.houseOwner.repository.HouseRepository;
 import lombok.RequiredArgsConstructor;
@@ -24,6 +25,7 @@ public class HouseService {
     private final MongoTemplate mongoTemplate;
     private final HouseRepository houseRepository;
     private final HouseMapper houseMapper;
+    private final KafkaProducerService kafkaProducerService;
     private final JwtTokenDecoderService jwtTokenDecoderService;
 
     @Transactional
@@ -35,7 +37,12 @@ public class HouseService {
 
         House house = houseRepository.save(houseMapper.convertDtoToModel(houseDto));
 
-        return houseMapper.convertModelToDto(house);
+        HouseDto houseDto1 = houseMapper.convertModelToDto(house);
+
+        //Produce to kafka for elastic search indexing
+        kafkaProducerService.publishHouseDtoToKafka(houseDto1, UpdateType.CREATE.name());
+
+        return houseDto1;
     }
 
 
