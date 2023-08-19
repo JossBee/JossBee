@@ -221,8 +221,6 @@ fjossbee-house-owner-service/src/main/java/com/jossbee/houseOwner/exception/Glob
 ,.idea/inspectionProfiles/Project_Default.xml,4\9\496a238a6afa168dbaf6efd37bb459331589579c
 Ñ
 Tjossbee-house-owner-service/src/main/java/com/jossbee/houseOwner/dto/AddressDto.java,0\c\0ce97cb040df9eb2a7f8bbadbdc234d6b239191b
-É
-Sjossbee-house-owner-service/src/main/java/com/jossbee/houseOwner/model/Address.java,5\4\54e2d6f2050bdde17f95c268fc2e3a9f9b86b306
 q
 Ajossbee-house-owner-service/.mvn/wrapper/maven-wrapper.properties,b\5\b5dcb97bdabd46ba38583c0fa0dbc5d269f85a17
 k
@@ -245,12 +243,8 @@ N
 Qjossbee-house-owner-service/src/main/java/com/jossbee/houseOwner/dto/HostDto.java,0\e\0ed420df56503bf66c16f8fd3fdb055cb468ed7a
 î
 djossbee-house-owner-service/src/main/java/com/jossbee/houseOwner/service/JwtTokenDecoderService.java,b\d\bd38ac5b1f9ec7b926224ebcc27681eddd630f99
-Ä
-Pjossbee-house-owner-service/src/main/java/com/jossbee/houseOwner/model/Host.java,f\6\f6db43e59ef1ae33dfbe7e6560b97c6e111ac185
 D
 kubernetes/nohup.out,0\0\00044ad10de96750e1153b5783a78e406cec02a9
-Ñ
-Tjossbee-house-owner-service/src/main/java/com/jossbee/houseOwner/model/Category.java,c\9\c972743b8fea42e2947ef61338c59b4833febd6b
 ì
 cjossbee-house-owner-service/src/main/java/com/jossbee/houseOwner/repository/CategoryRepository.java,e\d\ed7f1ee2765baac6e5fb794eb325dace37c5dce9
 ì
@@ -263,8 +257,6 @@ Ujossbee-house-owner-service/src/main/java/com/jossbee/houseOwner/dto/CategoryDt
 Xjossbee-house-owner-service/src/main/java/com/jossbee/houseOwner/mapper/HouseMapper.java,2\e\2e6a7fcac196841ca8ead79d5dc1e743610e5ad5
 ç
 ]jossbee-house-owner-service/src/main/java/com/jossbee/houseOwner/service/CategoryService.java,b\1\b13253d7702c33550073f2dcb2d894bffe68c8e8
-Å
-Qjossbee-house-owner-service/src/main/java/com/jossbee/houseOwner/model/House.java,8\f\8f1d7d5aa22a675fa2f20fbdc6de7112179052f9
 ô
 ijossbee-house-owner-service/src/main/java/com/jossbee/houseOwner/JossbeeHouseOwnerServiceApplication.java,0\5\05510652e7afcfc00ed44487d45b7aecf0208512
 ä

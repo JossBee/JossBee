@@ -2,6 +2,7 @@ package main
 
 import (
 	"context"
+	"encoding/json"
 	"fmt"
 	"log"
 	"os"
@@ -72,12 +73,16 @@ func main() {
 		case *kafka.Message:
 			fmt.Printf("Received message: %s\n", string(e.Value))
 
-			indexDoc := map[string]interface{}{
-				"message": string(e.Value),
+			var house House
+			if err := json.Unmarshal(e.Value, &house); err != nil {
+				fmt.Printf("Failed to unmarshal message: %v\n", err)
+				continue
 			}
+
+			// Indexing the house into Elasticsearch
 			_, err := elasticClient.Index().
 				Index(indexName).
-				BodyJson(indexDoc).
+				BodyJson(house).
 				Do(context.Background())
 
 			if err != nil {
@@ -87,6 +92,6 @@ func main() {
 		case kafka.Error:
 			fmt.Printf("Kafka error: %v\n", e)
 		}
-		time.Sleep(100 * time.Millisecond) // Add a small delay between polls
+		time.Sleep(100 * time.Millisecond)
 	}
 }
