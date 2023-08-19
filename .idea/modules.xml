@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Jossbee.iml" filepath="$PROJECT_DIR$/.idea/Jossbee.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jossbee-consumer.iml" filepath="$PROJECT_DIR$/jossbee-consumer.iml" />
     </modules>
   </component>
 </project>

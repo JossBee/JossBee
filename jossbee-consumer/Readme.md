@@ -1,0 +1,4 @@
+1. Elastic Search Url: https://zK2WsfJEu4:PLSutiAbRWd2vmnGEzhr5yfV@jossbee-58293848.us-east-1.bonsaisearch.net:443
+2. Kibana Url: https://jossbee-58293848.apps.bonsaisearch.net/?_bonsai_auth=eyJob3N0Ijoiam9zc2JlZS01ODI5Mzg0OC51cy1lYXN0LTEuYm9uc2Fpc2VhcmNoLm5ldCIsInVzZXIiOiJ4c3RtdjI2aTBjIiwicGFzc3dvcmQiOiJxZjNxaThuaGZ5IiwidmVyc2lvbiI6IjcuMTAuMiIsInNlcnZpY2UiOiJlbGFzdGljc2VhcmNoIn0
+3. ES provider url: https://app.bonsai.io/clusters/jossbee-58293848/tokens/zK2WsfJEu4
+4. Kafka provider url: https://confluent.cloud/auth_callback?code=u2oDuDldGYDDOf2kPiv7nzJ2HcqPpRtjdcCrX9f8no3XV&state=S1d5Sk9vazdDdHJHQWpRdWlIUUNYQmwyRzE5ZlRGc2FfdmxPeDV2VzJjRg%3D%3D
