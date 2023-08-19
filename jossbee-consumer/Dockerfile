@@ -1,18 +1,19 @@
-FROM golang:1.19 AS builder
+FROM golang:1.19 AS build-stage
 
 WORKDIR /app
 
 COPY . .
+RUN go mod vendor
+RUN go build -o main .
 
-RUN go mod download
+# Deploy the application binary into a lean image
+FROM alpine AS build-release-stage
 
-RUN CGO_ENABLED=0 GOOS=linux go build -o myapp .
-
-# Use a minimal base image to run the application
-FROM alpine:latest
+RUN apk update && \
+        apk add --no-cache tzdata
+RUN apk --no-cache add ca-certificates
 
 WORKDIR /app
 
-COPY --from=builder /app/myapp .
-
-CMD ["./myapp"]
+COPY --from=build-stage . .
+CMD ["/app/main"]

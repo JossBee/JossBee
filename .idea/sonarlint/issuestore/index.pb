@@ -257,8 +257,6 @@ Ujossbee-house-owner-service/src/main/java/com/jossbee/houseOwner/dto/CategoryDt
 Xjossbee-house-owner-service/src/main/java/com/jossbee/houseOwner/mapper/HouseMapper.java,2\e\2e6a7fcac196841ca8ead79d5dc1e743610e5ad5
 ç
 ]jossbee-house-owner-service/src/main/java/com/jossbee/houseOwner/service/CategoryService.java,b\1\b13253d7702c33550073f2dcb2d894bffe68c8e8
-ô
-ijossbee-house-owner-service/src/main/java/com/jossbee/houseOwner/JossbeeHouseOwnerServiceApplication.java,0\5\05510652e7afcfc00ed44487d45b7aecf0208512
 ä
 Zjossbee-house-owner-service/src/main/java/com/jossbee/houseOwner/constants/UpdateType.java,4\3\43aedb646df5773c6cb1e803bb003c8fa2e83b14
 Ç
