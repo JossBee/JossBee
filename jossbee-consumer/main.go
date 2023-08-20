@@ -24,7 +24,7 @@ func main() {
 	saslUsername := "EYJ4BVM3A6YUTRS6"
 	saslPassword := "plEHr04UtmxdTD1ZgcwOr2SAr52cZAGzaeqUX/dPaWN+Qz/V9bP5DsGl4Y9IvzI4"
 
-	elasticURL := "10.18.116.174:9200"
+	elasticURL := "http://elasticsearch:9200"
 	indexName := "jossbee"
 
 	consumer, err := kafka.NewConsumer(&kafka.ConfigMap{
