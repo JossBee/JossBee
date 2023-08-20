@@ -7,33 +7,27 @@ import (
 	"log"
 	"os"
 	"os/signal"
+	"strings"
 	"syscall"
 	"time"
 
 	"github.com/confluentinc/confluent-kafka-go/v2/kafka"
-	"github.com/olivere/elastic/v7"
+	elasticsearch "github.com/elastic/go-elasticsearch/v8"
+	"github.com/elastic/go-elasticsearch/v8/esapi"
 )
 
 func main() {
-
 	kafkaBroker := "pkc-41p56.asia-south1.gcp.confluent.cloud:9092"
 	consumerGroup := "house_topic_consumer_group"
 	topic := "house_topic"
 
-	saslUsername := "EYJ4BVM3A6YUTRS6"
-	saslPassword := "plEHr04UtmxdTD1ZgcwOr2SAr52cZAGzaeqUX/dPaWN+Qz/V9bP5DsGl4Y9IvzI4"
-
-	elasticURL := "https://zK2WsfJEu4:PLSutiAbRWd2vmnGEzhr5yfV@jossbee-58293848.us-east-1.bonsaisearch.net"
+	elasticURL := "localhost:9200"
 	indexName := "jossbee"
 
 	consumer, err := kafka.NewConsumer(&kafka.ConfigMap{
 		"bootstrap.servers": kafkaBroker,
 		"group.id":          consumerGroup,
 		"auto.offset.reset": "earliest",
-		"sasl.mechanisms":   "PLAIN",
-		"sasl.username":     saslUsername,
-		"sasl.password":     saslPassword,
-		"security.protocol": "SASL_SSL",
 	})
 	if err != nil {
 		log.Fatalf("Failed to create Kafka consumer: %v", err)
@@ -44,10 +38,10 @@ func main() {
 
 	consumer.SubscribeTopics([]string{topic}, nil)
 
-	elasticClient, err := elastic.NewClient(
-		elastic.SetURL(elasticURL),
-		elastic.SetSniff(false), // Disable sniffing in a single-node setup
-	)
+	cfg := elasticsearch.Config{
+		Addresses: []string{elasticURL},
+	}
+	elasticClient, err := elasticsearch.NewClient(cfg)
 	if err != nil {
 		log.Fatalf("Failed to create Elasticsearch client: %v", err)
 	}
@@ -59,7 +53,6 @@ func main() {
 		sig := <-sigChan
 		fmt.Printf("Received signal %v, shutting down...\n", sig)
 		consumer.Close()
-		elasticClient.Stop()
 		os.Exit(0)
 	}()
 
@@ -80,11 +73,12 @@ func main() {
 			}
 
 			// Indexing the house into Elasticsearch
-			_, err := elasticClient.Index().
-				Index(indexName).
-				BodyJson(house).
-				Do(context.Background())
-
+			esReq := esapi.IndexRequest{
+				Index:   indexName,
+				Body:    strings.NewReader(fmt.Sprintf(`{"doc":%s}`, string(e.Value))),
+				Refresh: "true",
+			}
+			_, err := esReq.Do(context.Background(), elasticClient)
 			if err != nil {
 				fmt.Printf("Failed to index document: %v\n", err)
 			}

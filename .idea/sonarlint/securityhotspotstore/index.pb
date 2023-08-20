@@ -310,8 +310,6 @@ G.idea/sonarlint/issuestore/a/9/a9559c5bf0b777abb52ef983bf739d20d32d0a24,d\f\df
 Q.idea/sonarlint/securityhotspotstore/9/7/9778e388e6c10acf4f07f79b38dc0ebdbb0ae3bf,8\2\824bec3d5f186ddf7a707db772ac43ef1c9ff2ca
 w
 G.idea/sonarlint/issuestore/8/e/8ea9aa991b8720036216f34e3a99e311717cf1cf,f\8\f8305f5f9dd4225cf0decd7f641eb5540469df6f
-G
-jossbee-consumer/go.mod,7\d\7df1227f13ff1db61ad4156d30b769cb7484c240
 w
 G.idea/sonarlint/issuestore/0/c/0cf00df4c2f468b91dc53edd6b9bb32d47a8bbac,e\7\e7a41a1c42539050fe8a2c79072366b79ad44f63
 Å
@@ -328,8 +326,6 @@ w
 G.idea/sonarlint/issuestore/c/d/cd3b71e9bdfca8b3aaa8574e7b5f822efb6a718a,2\4\24b98a42cf6ba2d4d9c4f891d306cc369a1bb98c
 Å
 Q.idea/sonarlint/securityhotspotstore/a/9/a9559c5bf0b777abb52ef983bf739d20d32d0a24,e\2\e26de82b91c299b2ed90d0f865500539bd74c3e7
-J
-jossbee-consumer/Readme.md,7\1\718854925e6954700667af2579c36d280d259b71
 Å
 Q.idea/sonarlint/securityhotspotstore/4/9/49c87c42f0313afd6f684bbee59bb91c10c71e1a,5\e\5e6f449985b38b51ff81ea2f5856718b8f06b6b4
 w
@@ -426,7 +422,5 @@ Pjossbee-house-owner-service/src/main/java/com/jossbee/houseOwner/model/Host.jav
 Sjossbee-house-owner-service/src/main/java/com/jossbee/houseOwner/model/Address.java,5\4\54e2d6f2050bdde17f95c268fc2e3a9f9b86b306
 Ñ
 Tjossbee-house-owner-service/src/main/java/com/jossbee/houseOwner/model/Category.java,c\9\c972743b8fea42e2947ef61338c59b4833febd6b
-J
-jossbee-consumer/domain.go,5\4\54658149ec66c867af92fe342466c8733ad4b961
 ô
 ijossbee-house-owner-service/src/main/java/com/jossbee/houseOwner/JossbeeHouseOwnerServiceApplication.java,0\5\05510652e7afcfc00ed44487d45b7aecf0208512

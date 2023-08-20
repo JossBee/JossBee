@@ -412,12 +412,8 @@ G.idea/sonarlint/issuestore/4/3/43aedb646df5773c6cb1e803bb003c8fa2e83b14,4\d\4d
 Q.idea/sonarlint/securityhotspotstore/9/7/975811225211831e92a9ad53f10e1cabc888cc16,c\c\cc615b36554cb2ebc7a769502a39258f45bf7b9b
 U
 %jossbee-house-owner-service/Readme.md,e\3\e39bfdbcc686148d9114893370590292fa8140d5
-J
-jossbee-consumer/Readme.md,7\1\718854925e6954700667af2579c36d280d259b71
 ê
 `jossbee-house-owner-service/src/main/java/com/jossbee/houseOwner/config/KafkaProducerConfig.java,1\a\1a2af7d2d0e8a1eb19767d256b3df1ee7d63a52c
-G
-jossbee-consumer/go.mod,7\d\7df1227f13ff1db61ad4156d30b769cb7484c240
 Ä
 Pjossbee-house-owner-service/src/main/java/com/jossbee/houseOwner/model/Host.java,f\6\f6db43e59ef1ae33dfbe7e6560b97c6e111ac185
 É
@@ -426,7 +422,5 @@ Sjossbee-house-owner-service/src/main/java/com/jossbee/houseOwner/model/Address.
 Tjossbee-house-owner-service/src/main/java/com/jossbee/houseOwner/model/Category.java,c\9\c972743b8fea42e2947ef61338c59b4833febd6b
 Å
 Qjossbee-house-owner-service/src/main/java/com/jossbee/houseOwner/model/House.java,8\f\8f1d7d5aa22a675fa2f20fbdc6de7112179052f9
-J
-jossbee-consumer/domain.go,5\4\54658149ec66c867af92fe342466c8733ad4b961
 ô
 ijossbee-house-owner-service/src/main/java/com/jossbee/houseOwner/JossbeeHouseOwnerServiceApplication.java,0\5\05510652e7afcfc00ed44487d45b7aecf0208512

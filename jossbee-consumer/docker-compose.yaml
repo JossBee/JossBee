@@ -1,0 +1,6 @@
+version: '3'
+services:
+  jossbee-consumer:
+    container_name: jossbee-consumer
+    image: 124225/jossbee-consumer:latest
+    restart: always

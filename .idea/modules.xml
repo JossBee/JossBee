@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Jossbee.iml" filepath="$PROJECT_DIR$/.idea/Jossbee.iml" />
       <module fileurl="file://$PROJECT_DIR$/jossbee-consumer.iml" filepath="$PROJECT_DIR$/jossbee-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jossbee-search-service.iml" filepath="$PROJECT_DIR$/jossbee-search-service.iml" />
     </modules>
   </component>
 </project>
