@@ -8,8 +8,6 @@ import software.amazon.awssdk.auth.credentials.StaticCredentialsProvider;
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.s3.S3Client;
 
-import java.net.URI;
-
 @Configuration
 public class AwsS3Config {
 
@@ -19,9 +17,6 @@ public class AwsS3Config {
     @Value("${s3.secretKey}")
     private String secretKey;
 
-    @Value("${s3.host}")
-    private String s3HostAddress;
-
     @Bean
     public S3Client s3Client() {
 
@@ -29,9 +24,7 @@ public class AwsS3Config {
 
         return S3Client.builder()
                 .credentialsProvider(StaticCredentialsProvider.create(awsCredentials))
-                .region(Region.US_WEST_1)
-                .endpointOverride(URI.create(s3HostAddress))
+                .region(Region.AP_SOUTH_1)
                 .build();
     }
-
 }
