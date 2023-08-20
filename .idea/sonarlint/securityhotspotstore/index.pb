@@ -127,8 +127,6 @@ y
 I.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_15_2.xml,5\9\5935a6528c2d1e078babeff5c4a8c5aa67fad379
 p
 @.idea/libraries/Maven__org_springframework_spring_jcl_6_0_11.xml,f\6\f641a3025c936a098b8c29f5f66e81ccdb757f62
-V
-&jossbee-house-owner-service/.gitignore,0\c\0cbaa877ca3380e0f6a2d6071c5e9a88c23e6b1f
 P
  jossbee-house-owner-service/mvnw,c\c\cc717331996fcc38025e72c6bc69401ad7555b3e
 T
@@ -422,5 +420,3 @@ Pjossbee-house-owner-service/src/main/java/com/jossbee/houseOwner/model/Host.jav
 Sjossbee-house-owner-service/src/main/java/com/jossbee/houseOwner/model/Address.java,5\4\54e2d6f2050bdde17f95c268fc2e3a9f9b86b306
 „
 Tjossbee-house-owner-service/src/main/java/com/jossbee/houseOwner/model/Category.java,c\9\c972743b8fea42e2947ef61338c59b4833febd6b
-™
-ijossbee-house-owner-service/src/main/java/com/jossbee/houseOwner/JossbeeHouseOwnerServiceApplication.java,0\5\05510652e7afcfc00ed44487d45b7aecf0208512

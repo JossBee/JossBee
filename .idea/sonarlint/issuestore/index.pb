@@ -177,8 +177,6 @@ t
 D.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_9_3.xml,6\0\6054de7cc6f0fb2d1bce9abbd2a58030693ab22b
 û
 njossbee-house-owner-service/src/test/java/com/jossbee/houseOwner/JossbeeHouseOwnerServiceApplicationTests.java,7\2\72d456619aa895f9d79b36c594f6596467edae7e
-V
-&jossbee-house-owner-service/.gitignore,0\c\0cbaa877ca3380e0f6a2d6071c5e9a88c23e6b1f
 P
  jossbee-house-owner-service/mvnw,c\c\cc717331996fcc38025e72c6bc69401ad7555b3e
 T
@@ -422,5 +420,3 @@ Sjossbee-house-owner-service/src/main/java/com/jossbee/houseOwner/model/Address.
 Tjossbee-house-owner-service/src/main/java/com/jossbee/houseOwner/model/Category.java,c\9\c972743b8fea42e2947ef61338c59b4833febd6b
 Å
 Qjossbee-house-owner-service/src/main/java/com/jossbee/houseOwner/model/House.java,8\f\8f1d7d5aa22a675fa2f20fbdc6de7112179052f9
-ô
-ijossbee-house-owner-service/src/main/java/com/jossbee/houseOwner/JossbeeHouseOwnerServiceApplication.java,0\5\05510652e7afcfc00ed44487d45b7aecf0208512

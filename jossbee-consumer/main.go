@@ -21,13 +21,20 @@ func main() {
 	consumerGroup := "house_topic_consumer_group"
 	topic := "house_topic"
 
-	elasticURL := "localhost:9200"
+	saslUsername := "EYJ4BVM3A6YUTRS6"
+	saslPassword := "plEHr04UtmxdTD1ZgcwOr2SAr52cZAGzaeqUX/dPaWN+Qz/V9bP5DsGl4Y9IvzI4"
+
+	elasticURL := "10.18.116.174:9200"
 	indexName := "jossbee"
 
 	consumer, err := kafka.NewConsumer(&kafka.ConfigMap{
 		"bootstrap.servers": kafkaBroker,
 		"group.id":          consumerGroup,
 		"auto.offset.reset": "earliest",
+		"sasl.mechanisms":   "PLAIN",
+		"sasl.username":     saslUsername,
+		"sasl.password":     saslPassword,
+		"security.protocol": "SASL_SSL",
 	})
 	if err != nil {
 		log.Fatalf("Failed to create Kafka consumer: %v", err)
