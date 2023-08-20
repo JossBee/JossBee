@@ -1,19 +1,14 @@
-FROM golang:1.19 AS build-stage
+FROM golang:1.16
 
 WORKDIR /app
 
-COPY . .
-RUN go mod vendor
-RUN go build -o main .
+COPY *.go .
+COPY go.mod .
+COPY go.sum .
 
-# Deploy the application binary into a lean image
-FROM alpine AS build-release-stage
+RUN go get github.com/confluentinc/confluent-kafka-go/v2/kafka
+RUN go get github.com/olivere/elastic/v7
 
-RUN apk update && \
-        apk add --no-cache tzdata
-RUN apk --no-cache add ca-certificates
+RUN go build -o jossbee-consumer
 
-WORKDIR /app
-
-COPY --from=build-stage . .
-CMD ["/app/main"]
+CMD ["./jossbee-consumer"]
