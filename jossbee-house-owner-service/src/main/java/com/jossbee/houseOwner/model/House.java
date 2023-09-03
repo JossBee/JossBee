@@ -2,13 +2,12 @@ package com.jossbee.houseOwner.model;
 
 import lombok.*;
 import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
 
 import javax.validation.Valid;
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.Positive;
+import javax.validation.constraints.*;
 import java.time.LocalDateTime;
 import java.util.List;
 
@@ -58,11 +57,18 @@ public class House {
     @Positive(message = "Price per night must be positive")
     private double pricePerNight;
 
+    @Min(value = 0, message = "Discount value must be greater than or equal to 0")
+    private double discount;
+
     @Valid
     private Host host;
 
     @Valid
     private Address address;
+
+    @DBRef
+    @NotNull(message = "Category must be provided for house")
+    private Category category;
 
     private List<@NotBlank(message = "Amenity cannot be blank") String> amenities;
 

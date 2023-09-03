@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.validation.Valid;
+import javax.validation.constraints.Min;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Positive;
@@ -21,6 +22,8 @@ import static com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL;
 @NoArgsConstructor
 @JsonInclude(NON_NULL)
 public class HouseDto {
+
+    private String updateType;
 
     private String id;
 
@@ -54,11 +57,17 @@ public class HouseDto {
     @Positive(message = "Price per night must be positive")
     private double pricePerNight;
 
+    @Min(value = 0, message = "Discount value must be greater than or equal to 0")
+    private double discount;
+
     @Valid
     private HostDto host;
 
     @Valid
     private AddressDto address;
+
+    @Valid
+    private CategoryDto category;
 
     private List<@NotBlank(message = "Amenity cannot be blank") String> amenities;
 
