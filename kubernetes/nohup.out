@@ -1,0 +1,9 @@
+Forwarding from 127.0.0.1:4566 -> 4566
+Forwarding from [::1]:4566 -> 4566
+Handling connection for 4566
+Handling connection for 4566
+Handling connection for 4566
+E0817 20:09:50.287033   20296 portforward.go:381] error copying from remote stream to local connection: readfrom tcp4 127.0.0.1:4566->127.0.0.1:4014: write tcp4 127.0.0.1:4566->127.0.0.1:4014: wsasend: An established connection was aborted by the software in your host machine.
+Handling connection for 4566
+Handling connection for 4566
+Handling connection for 4566
