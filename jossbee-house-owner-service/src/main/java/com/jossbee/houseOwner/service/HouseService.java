@@ -99,4 +99,12 @@ public class HouseService {
                 .map(houseMapper::convertModelToDto)
                 .toList();
     }
+
+    public List<HouseDto> getAllRegisteredHousesByOwnerId(String ownerId) {
+        List<House> houses = houseRepository.findAllByOwnerId(ownerId);
+        System.out.println("Houses owned by "+ownerId+": "+houses.size());
+        return houses.stream()
+                .map(houseMapper::convertModelToDto)
+                .toList();
+    }
 }
