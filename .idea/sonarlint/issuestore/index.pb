@@ -808,3 +808,7 @@ N
 jossbee-search-service/main.go,8\f\8f61bbe3467e197689d0a2f9dbdf3952fe5aed9a
 ê
 `jossbee-house-owner-service/src/main/java/com/jossbee/houseOwner/controller/HouseController.java,a\c\ac6847b8934b5da6ad7654c93feb687556749167
+ã
+[jossbee-image-server/src/main/java/com/jossbee/image_server/controller/ImageController.java,1\4\144220658dfc15570edeb6dec2c828f39b474152
+É
+Sjossbee-image-server/src/main/java/com/jossbee/image_server/image/ImageService.java,0\4\04f236558034d27ddddf8d92861eea649b2ea828
