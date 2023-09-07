@@ -35,4 +35,11 @@ public class HouseController {
         List<HouseDto> houses = houseService.getAllRegisteredHouses(authToken, title, houseId);
         return ResponseEntity.status(HttpStatus.OK).body(houses);
     }
+
+    @GetMapping("/all")
+    public ResponseEntity<List<HouseDto>> getAllHouses(){
+        List<HouseDto> houses = houseService.getAllRegisteredHouses();
+        return ResponseEntity.status(HttpStatus.OK).body(houses);
+    }
+
 }

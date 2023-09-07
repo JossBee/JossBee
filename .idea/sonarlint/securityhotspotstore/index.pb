@@ -257,8 +257,6 @@ Rjossbee-house-owner-service/src/main/java/com/jossbee/houseOwner/dto/HouseDto.j
 Zjossbee-house-owner-service/src/main/java/com/jossbee/houseOwner/constants/UpdateType.java,4\3\43aedb646df5773c6cb1e803bb003c8fa2e83b14
 S
 #jossbee-house-owner-service/pom.xml,7\6\7640124904c26ed5f705910aa40daadb4ae8d8af
-ê
-`jossbee-house-owner-service/src/main/java/com/jossbee/houseOwner/controller/HouseController.java,a\c\ac6847b8934b5da6ad7654c93feb687556749167
 :
 
 .gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
@@ -796,3 +794,17 @@ Ujossbee-consumer/elasticsearch-data/indices/k82AP_RGT1aGgWMUAE3jSQ/0/index/writ
 Ujossbee-consumer/elasticsearch-data/indices/2zhUSWr9SW-Bp6wHF6F1Fw/0/index/write.lock,3\7\37f0b028d31e1fdead164e8ad20f1d2fa327fad0
 Ö
 Ujossbee-consumer/elasticsearch-data/indices/wJGtIV6qTwSQ5SkZhwYeZg/0/index/write.lock,9\f\9f9f2e5265e89ac81cb2fd4ec70989b584708a22
+L
+jossbee-image-server/pom.xml,1\8\18afcff31a5d687ac2ad75bec4343988826365a3
+]
+-.idea/sonarlint/securityhotspotstore/index.pb,8\8\88a9255124c95bdc913197c120a8d560edc59c8e
+S
+#.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
+â
+Yjossbee-image-server/src/main/java/com/jossbee/image_server/service/ImageServiceImpl.java,1\3\137432e88a206b759c2d96ee333163712b52e9d5
+É
+Sjossbee-image-server/src/main/java/com/jossbee/image_server/config/AwsS3Config.java,5\9\5911044f907c993a279468efd2847d667115c866
+N
+jossbee-search-service/main.go,8\f\8f61bbe3467e197689d0a2f9dbdf3952fe5aed9a
+ê
+`jossbee-house-owner-service/src/main/java/com/jossbee/houseOwner/controller/HouseController.java,a\c\ac6847b8934b5da6ad7654c93feb687556749167

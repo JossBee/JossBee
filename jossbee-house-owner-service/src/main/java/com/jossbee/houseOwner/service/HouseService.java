@@ -99,4 +99,16 @@ public class HouseService {
                 .map(houseMapper::convertModelToDto)
                 .toList();
     }
+
+    public List<HouseDto> getAllRegisteredHouses() {
+
+        List<House> houses;
+        Query query = new Query();
+
+        houses = mongoTemplate.find(query, House.class);
+
+        return houses.stream()
+                .map(houseMapper::convertModelToDto)
+                .toList();
+    }
 }

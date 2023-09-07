@@ -260,8 +260,6 @@ S
 :
 
 .gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
-ê
-`jossbee-house-owner-service/src/main/java/com/jossbee/houseOwner/controller/HouseController.java,a\c\ac6847b8934b5da6ad7654c93feb687556749167
 ä
 Zjossbee-house-owner-service/src/main/java/com/jossbee/houseOwner/service/HouseService.java,9\7\975811225211831e92a9ad53f10e1cabc888cc16
 í
@@ -796,3 +794,17 @@ K
 jossbee-consumer/Dockerfile,3\4\3464eb3648d11b8fba08ef3af3ecb0c82839b747
 H
 jossbee-consumer/main.go,a\a\aa1c381e14c290619a32641fdf84b38fa24d8254
+L
+jossbee-image-server/pom.xml,1\8\18afcff31a5d687ac2ad75bec4343988826365a3
+]
+-.idea/sonarlint/securityhotspotstore/index.pb,8\8\88a9255124c95bdc913197c120a8d560edc59c8e
+S
+#.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
+â
+Yjossbee-image-server/src/main/java/com/jossbee/image_server/service/ImageServiceImpl.java,1\3\137432e88a206b759c2d96ee333163712b52e9d5
+É
+Sjossbee-image-server/src/main/java/com/jossbee/image_server/config/AwsS3Config.java,5\9\5911044f907c993a279468efd2847d667115c866
+N
+jossbee-search-service/main.go,8\f\8f61bbe3467e197689d0a2f9dbdf3952fe5aed9a
+ê
+`jossbee-house-owner-service/src/main/java/com/jossbee/houseOwner/controller/HouseController.java,a\c\ac6847b8934b5da6ad7654c93feb687556749167
