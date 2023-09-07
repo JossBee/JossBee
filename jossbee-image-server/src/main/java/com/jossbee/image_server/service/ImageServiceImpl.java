@@ -99,12 +99,11 @@ public class ImageServiceImpl implements ImageService {
             log.error("Error deleting the file, error is: {}", e.getMessage(), e);
         }
 
-        return s3Client.utilities()
+        return String.valueOf(s3Client.utilities()
                 .getUrl(GetUrlRequest.builder()
                         .bucket(bucketName)
                         .key(imageFileNewName)
-                        .build())
-                .toString();
+                        .build()));
     }
 
     private String determineContentType(String filename) {
