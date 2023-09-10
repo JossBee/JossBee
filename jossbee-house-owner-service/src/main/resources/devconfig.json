@@ -1,5 +1,5 @@
 {
-    "SERVER_PORT": "8181",
+    "SERVER_PORT": "8282",
     "APPLICATION_NAME": "jossbee-house-owner",
     "MONGODB_HOST": "localhost",
     "MONGODB_PORT": "27017",
