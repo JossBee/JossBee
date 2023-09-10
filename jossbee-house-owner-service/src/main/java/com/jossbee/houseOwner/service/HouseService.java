@@ -148,7 +148,7 @@ public class HouseService {
         }
 
         if (guestNumber != null && guestNumber > 0) {
-            criteria = criteria.and("guestsCapacity").is(guestNumber);
+            criteria = criteria.and("guestsCapacity").gte(guestNumber);
         }
 
         if (title != null && !title.isEmpty()) {
@@ -160,11 +160,11 @@ public class HouseService {
         }
 
         if (numberOfBeds != null && numberOfBeds > 0) {
-            criteria = criteria.and("numberOfBedRooms").is(numberOfBeds);
+            criteria = criteria.and("numberOfBedRooms").gte(numberOfBeds);
         }
 
         if (numberOfBathrooms != null && numberOfBathrooms > 0) {
-            criteria = criteria.and("numberOfBathrooms").is(numberOfBathrooms);
+            criteria = criteria.and("numberOfBathrooms").gte(numberOfBathrooms);
         }
 
         if (amenities != null && amenities.length > 0) {
