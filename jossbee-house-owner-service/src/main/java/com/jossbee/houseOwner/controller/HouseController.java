@@ -31,15 +31,30 @@ public class HouseController {
     @GetMapping
     public ResponseEntity<List<HouseDto>> getAllRegisteredHouse(@RequestHeader("authToken") String authToken,
                                                                 @RequestParam(name = "title", required = false) String title,
-                                                                @RequestParam(name = "houseId", required = false)String houseId) {
+                                                                @RequestParam(name = "houseId", required = false) String houseId) {
         List<HouseDto> houses = houseService.getAllRegisteredHouses(authToken, title, houseId);
         return ResponseEntity.status(HttpStatus.OK).body(houses);
     }
 
     @GetMapping("/all")
-    public ResponseEntity<List<HouseDto>> getAllHouses(){
+    public ResponseEntity<List<HouseDto>> getAllHouses() {
         List<HouseDto> houses = houseService.getAllRegisteredHouses();
         return ResponseEntity.status(HttpStatus.OK).body(houses);
     }
 
+    @GetMapping("/search-house")
+    public ResponseEntity<List<HouseDto>> searchHouse(@RequestParam(name = "price_range_min", required = false) Double priceRangeMin,
+                                                      @RequestParam(name = "price_range_max", required = false) Double priceRangeMax,
+                                                      @RequestParam(name = "guest_number", required = false) Integer guestNumber,
+                                                      @RequestParam(name = "title", required = false) String title,
+                                                      @RequestParam(name = "description", required = false) String description,
+                                                      @RequestParam(name = "number_of_beds", required = false) Integer numberOfBeds,
+                                                      @RequestParam(name = "number_of_bathrooms", required = false) Integer numberOfBathrooms,
+                                                      @RequestParam(name = "category", required = false) String category,
+                                                      @RequestParam(name = "amenities", required = false) String[] amenities) {
+
+        List<HouseDto> houses = houseService.searchHouse(priceRangeMin, priceRangeMax, guestNumber, title, description,
+                numberOfBeds, numberOfBathrooms, category, amenities);
+        return ResponseEntity.status(HttpStatus.OK).body(houses);
+    }
 }
