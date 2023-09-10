@@ -10,6 +10,7 @@
         <module name="jossbee-image-server" />
         <module name="jossbee-discovery-service" />
         <module name="jossbee-auth-service" />
+        <module name="jossbee-auth" />
         <module name="jossbee-house-owner-service" />
       </profile>
     </annotationProcessing>
@@ -19,6 +20,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="jossbee-auth" options="-parameters" />
       <module name="jossbee-auth-service" options="-parameters" />
       <module name="jossbee-discovery-server" options="-parameters" />
       <module name="jossbee-discovery-service" options="-parameters" />

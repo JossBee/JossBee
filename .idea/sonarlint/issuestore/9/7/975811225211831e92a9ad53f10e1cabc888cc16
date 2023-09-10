@@ -1,5 +1,11 @@
 
+X	java:S107w"<Method has 9 parameters, which is greater than 7 authorized.(½âæê8«™¿ï§1
+^	java:S107‰"<Method has 9 parameters, which is greater than 7 authorized.(öÙûÛùÿÿÿÿ8«™¿ï§1
 X
-java:S11729";Remove these unused method parameters "houseDto", "userId".(èÊí¿8ğú”œŸ1
+java:S1172=";Remove these unused method parameters "houseDto", "userId".(èÊí¿8®™¿ï§1
 O
-java:S1135:"2Complete the task associated to this TODO comment.(­í¦8ñú”œŸ1
+java:S1135>"2Complete the task associated to this TODO comment.(­í¦8®™¿ï§1
+u
+java:S3776‰"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(öÙûÛùÿÿÿÿ8¶™¿ï§1
+M
+java:S1874®"/Remove this use of "isEmpty"; it is deprecated.(»º—°8»™¿ï§1
