@@ -1,7 +1,7 @@
 {
     "SERVER_PORT": "8181",
-    "AWS_S3_ACCESS_KEY": "AKIAX3QTUWJFJIJKIQQM",
-    "AWS_S3_SECRET_KEY": "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",
+    "AWS_S3_ACCESS_KEY": "",
+    "AWS_S3_SECRET_KEY": "",
     "APPLICATION_NAME": "jossbee-image-server",
     "AWS_S3_BUCKET": "team-jossbee"
 }
